@@ -36,9 +36,9 @@ def clear_var_log():
             path = os.path.join(root, file)
             try:
                 open(path, "w").close()
-                print(f"[+] Temizlendi: {path}")
+                print(f"[+] cleared: {path}")
             except:
-                print(f"[!] Atlandı: {path}")
+                print(f"[!] skipped: {path}")
 
 def clear_leftovers(distro):
     home = os.path.expanduser("~")
